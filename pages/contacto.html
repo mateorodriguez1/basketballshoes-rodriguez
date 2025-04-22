@@ -17,15 +17,41 @@
     </head>
     <body>
         <header>
-            <h1 class="title"> Basketball Shoes </h1>
-            <nav class="navbar">
-                <ul>
-                  <li> <a href="../index.html">Home</a></li>
-                  <li><a href="../pages/catalogo.html">Catálogo</a></li>
-                  <li> <a href="../pages/servicios.html">Servicios</a></li>
-                  <li> <a href="../pages/contacto.html">Contacto</a></li>
-                  <li><a href="../pages/nosotros.html">Sobre nosotros</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Basketball Shoes</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <section>
@@ -33,38 +59,34 @@
             <h2 id="title-contactos">Contáctanos.</h2>
             <p class="parrafo-contactos">Cualquier duda o consulta que tengas con tu compra, no dudes en escribirnos!.</p>
         </section>
-
-        <form action="" class="label">
-            <div>
-                <label for="">Nombre:</label>
-                <input type="nombre" name="" id="">
+        <form action="" class="container my-5 p-4 rounded shadow-sm" id="form-contacto">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" name="">
+                </div>
             </div>
-            <div>
-                <label for="">Apellido:</label>
-                <input type="nombre" name="" id="">
+            <div class="mb-3">
+                <label class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" name="">
             </div>
-            <div>
-                <label for="">Correo Electrónico:</label>
-                <input type="email" name="" id="">
+            <div class="mb-3">
+                <label class="form-label">Número de compra:</label>
+                <input type="number" class="form-control" name="">
             </div>
-            <div>
-                <label for="">Número de compra:</label>
-                <input type="number" name="" id="">
+            <div class="mb-3">
+                <label class="form-label">Consulta:</label>
+                <textarea class="form-control" rows="4"></textarea>
             </div>
-            <div>
-                <label for="">Consulta:</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="text-center mt-3">
-                <button type="button" class="btn btn-primary btn-lg">Enviar</button>
-                
-                </button>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary px-4 py-2">Enviar</button>
             </div>
         </form>
+          
 
 
-        <footer class="footer">
-            <p>© 2025 Basketball Shoes</p>
+        <footer class="footer text-center py-3 mt-5">
+            <p>&copy; 2025 Basketball Shoes</p>
         </footer>
     </body>
 </html>
